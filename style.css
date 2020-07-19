@@ -1,0 +1,17 @@
+body {
+    background-color: #ffffe5;
+}
+#image {
+        border-style: double;
+    border-color: #FF9AA2;
+    border-width: 20px;
+    width: 800px;
+}
+#text {
+    font-size: 35px;
+    border-style: none none solid solid;
+    border-color: #FF9AA2;
+    border-width: 10px;
+    background-color: #FFB7B2;
+    width: 830px;
+}
