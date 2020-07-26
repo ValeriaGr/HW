@@ -1,0 +1,93 @@
+body {
+
+    background-color: rgb(133, 133, 133);
+}
+
+table {
+    width: 100%;
+    letter-spacing: 1px;
+    color: white;
+    font-family: Arial;
+    text-indent: 3mm;
+    font-size: 0.6pc;
+    
+    }
+
+th {
+    text-transform: uppercase;
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    font-size: 0.8pc;
+   
+}
+
+.ugol-left {
+    border-radius: 10px 0px 0px 0px;
+}
+.ugol-right {
+    border-radius: 0px 10px 0px 0px;
+}
+
+th, td {
+    width: 12%;
+        }
+
+td {
+    padding: 0px 5px 0px 5px;
+}
+
+.number {
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 11px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+        }
+
+.fon {
+    height: 150px;
+    background-color: rgb(87, 84, 84);
+}
+
+.pustoi {
+    display: block;
+    margin-top: 30px;
+    color: rgb(87, 84, 84);
+}
+
+.pink {
+background-color: rgb(255, 153, 153);
+color: rgb(76, 76, 76);
+border-radius: 10px;
+text-align: center;
+}
+
+.blue {
+background-color: rgb(133, 214, 255);
+color: rgb(76, 76, 76);
+border-radius: 10px;
+text-align: center;
+}
+
+.green {
+    background-color: rgb(153, 255, 153);
+    color: rgb(76, 76, 76);
+    border-radius: 10px;
+    text-align: center;
+} 
+
+.siren {
+    background-color: rgb(222, 189, 255);
+    color: rgb(76, 76, 76);
+    border-radius: 10px;
+    text-align: center;
+} 
+
+.plus {
+    margin-right: -20px;
+}
+
+.wplus {
+    margin-right: -150px;
+}
