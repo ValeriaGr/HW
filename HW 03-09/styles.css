@@ -1,0 +1,351 @@
+body {
+  background-color: #ebecf3;
+  font-family: Roboto, sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr 1fr;
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: 
+  '. grid-header-item-1 grid-header-item-2 grid-header-item-3' 
+  'grid-label-1 grid-item-1 grid-item-8 grid-item-15' 
+  'grid-label-2 grid-item-2 grid-item-9 grid-item-16' 
+  'grid-label-3 grid-item-3 grid-item-10 grid-item-17' 
+  'grid-label-4 grid-item-4 grid-item-11 grid-item-18' 
+  'grid-label-5 grid-item-5 grid-item-12 grid-item-19' 
+  'grid-label-6 grid-item-6 grid-item-13 grid-item-20' 
+  'grid-label-7 grid-item-7 grid-item-14 grid-item-21';
+}
+
+.grid-label {
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  border-top: rgba(0, 0, 0, 0.12) 1px solid;
+  display: grid;
+  align-items: center;
+}
+
+.grid-header-item {
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+  display: grid;
+  justify-items: center;
+}
+
+.grid-item {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-top: rgba(0, 0, 0, 0.12) 1px solid;
+  background-color: #fff;
+  color: #777;
+}
+
+.blue {
+  background-color: #6165ff;
+  color: #fff;
+}
+
+.grid-header-item.blue {
+  margin-top: -10px;
+}
+
+.price.blue {
+  margin-bottom: -10px;
+}
+
+.product-image {
+  width: 100px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.grid-label-1 {
+  grid-area: grid-label-1;
+}
+
+.grid-label-2 {
+  grid-area: grid-label-2;
+}
+
+.grid-label-3 {
+  grid-area: grid-label-3;
+}
+
+.grid-label-4 {
+  grid-area: grid-label-4;
+}
+
+.grid-label-5 {
+  grid-area: grid-label-5;
+}
+
+.grid-label-6 {
+  grid-area: grid-label-6;
+}
+
+.grid-label-7 {
+  grid-area: grid-label-7;
+}
+
+.grid-header-item-1 {
+  grid-area: grid-header-item-1;
+}
+
+.grid-header-item-2 {
+  grid-area: grid-header-item-2;
+}
+
+.grid-header-item-3 {
+  grid-area: grid-header-item-3;
+}
+
+.grid-item-1 {
+  grid-area: grid-item-1;
+}
+
+.grid-item-2 {
+  grid-area: grid-item-2;
+}
+
+.grid-item-3 {
+  grid-area: grid-item-3;
+}
+
+.grid-item-4 {
+  grid-area: grid-item-4;
+}
+
+.grid-item-5 {
+  grid-area: grid-item-5;
+}
+
+.grid-item-6 {
+  grid-area: grid-item-6;
+}
+
+.grid-item-7 {
+  grid-area: grid-item-7;
+}
+
+.grid-item-8 {
+  grid-area: grid-item-8;
+}
+
+.grid-item-9 {
+  grid-area: grid-item-9;
+}
+
+.grid-item-10 {
+  grid-area: grid-item-10;
+}
+
+.grid-item-11 {
+  grid-area: grid-item-11;
+}
+
+.grid-item-12 {
+  grid-area: grid-item-12;
+}
+
+.grid-item-13 {
+  grid-area: grid-item-13;
+}
+
+.grid-item-14 {
+  grid-area: grid-item-14;
+}
+
+.grid-item-15 {
+  grid-area: grid-item-15;
+}
+
+.grid-item-16 {
+  grid-area: grid-item-16;
+}
+
+.grid-item-17 {
+  grid-area: grid-item-17;
+}
+
+.grid-item-18 {
+  grid-area: grid-item-18;
+}
+
+.grid-item-19 {
+  grid-area: grid-item-19;
+}
+
+.grid-item-20 {
+  grid-area: grid-item-20;
+}
+
+.grid-item-21 {
+  grid-area: grid-item-21;
+}
+
+@media (max-width: 991px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas: 
+    'grid-header-item-1 grid-header-item-2 grid-header-item-3'
+    'grid-label-1 . .'
+    'grid-item-1 grid-item-8 grid-item-15'
+    'grid-label-2 . .'
+    'grid-item-2 grid-item-9 grid-item-16'
+    'grid-label-3 . .'
+    'grid-item-3 grid-item-10 grid-item-17'
+    'grid-label-4 . .'
+    'grid-item-4 grid-item-11 grid-item-18'
+    'grid-label-5 . .'
+    'grid-item-5 grid-item-12 grid-item-19'
+    'grid-label-6 . .'
+    'grid-item-6 grid-item-13 grid-item-20'
+    'grid-label-7 . .'
+    'grid-item-7 grid-item-14 grid-item-21';
+    max-width: 500px;
+    border: rgba(0, 0, 0, 1) 1px solid;
+    background-color: #ebecf3;
+  }
+      
+    .grid-header-item {
+      background-color: #ebecf3;
+      color: #000;
+      padding: 0px;
+      justify-items: left;
+      padding-left: 10px;
+    }
+    .ultra {
+      color: #000;
+    }
+     
+    .grid-label {
+      border-top: none;
+      justify-items: left;
+      padding-left: 10px;
+      
+      }
+    .grid-header-item.blue {
+      margin-top: 0px;
+    }
+    
+    .price.blue {
+      margin-bottom: 0px;
+    }
+    
+    .grid-item {
+      border-top: rgba(0, 0, 0, 1) 1px solid;
+      background-color: #EBECF3;
+      color: #777;
+      justify-items: left;
+      padding-top: 20px;
+      padding-left: 10px;
+      
+    }
+    
+    .blue {
+      background-color: white;
+      color: #777;
+      
+    }
+    .price {
+      color: #000;
+    }
+  
+}
+
+
+@media (max-width: 700px) {
+  body {
+    background-color: black;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(15, auto);
+    grid-template-areas: 
+    'grid-header-item-1 grid-header-item-2 grid-header-item-3'
+    '. grid-label-1 .'
+    'grid-item-1 grid-item-8 grid-item-15'
+    '. grid-label-2 .'
+    'grid-item-2 grid-item-9 grid-item-16'
+    '. grid-label-3 .'
+    'grid-item-3 grid-item-10 grid-item-17'
+    '. grid-label-4 .'
+    'grid-item-4 grid-item-11 grid-item-18'
+    '. grid-label-5 .'
+    'grid-item-5 grid-item-12 grid-item-19'
+    '. grid-label-6 .'
+    'grid-item-6 grid-item-13 grid-item-20'
+    '. grid-label-7 .'
+    'grid-item-7 grid-item-14 grid-item-21';
+   
+    border: rgba(0, 0, 0, 1) 1px solid;
+    background-color: #ebecf3;
+  }
+      
+    .grid-header-item {
+      background-color: #ebecf3;
+      color: #000;
+      padding: 0px;
+          }
+    .ultra {
+      color: #000;
+    }
+     
+    .grid-label {
+      border-top: none;
+      justify-items: center;
+         
+      }
+    .grid-header-item.blue {
+      margin-top: 0px;
+    }
+    
+    .price.blue {
+      margin-bottom: 0px;
+    }
+    
+    .grid-item {
+      border-top: rgba(0, 0, 0, 1) 1px solid;
+      background-color: #EBECF3;
+      color: #777;
+      padding-top: 20px;
+      justify-items: center;
+      
+      
+     
+    }
+    
+    .blue {
+      background-color: #EBECF3;
+      color: #777;
+      
+    }
+    .price {
+      color: #000;
+    }
+  
+}
+
+
+
+
